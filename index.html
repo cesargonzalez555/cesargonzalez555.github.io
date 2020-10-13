@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+        <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>CNServices</title>
+
+  </head>
+
+  <body>
+      <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <!-- The button for when the navbar collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target='#Navbar'>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mr-auto" href="#"><span class="fa fa-home fa-lg"></span></a>
+
+        <div class="collapse navbar-collapse" id="Navbar">
+          <form class="form-inline my-2 my-lg-0 .justify-content-between">
+            <input class="form-control mr-sm-2" type="search" placeholder="Find Services" aria-label="Search">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+
+        </div>
+
+        <!-- sign in and sign up buttons -->
+        <span class="navbar-text">
+          <a class="btn" role="button" data-toggle="modal" data-target="#loginModal">
+            <span class="fa fa-sign-in"></span> Login
+          </a>
+        </span>
+
+        <span class="navbar-text">
+          <a class="btn" role="button" data-toggle="modal" data-target="#signUpModal">
+            <span class="fa fa-sign-in"></span> Sing up
+          </a>
+       </span>
+      </nav>
+
+      <!-- The login modal tha is shown when click the sign in button -->
+      <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-tittle">Login</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                   &times;
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-row">
+                      <div class="form-group col-sm-4">
+                          <label class="sr-only" for="exampleInputEmail">Email</label>
+                          <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail" placeholder="Enter Email">
+                      </div>
+
+                      <div class="form-group col-sm-4">
+                        <label class="sr-only" for="exampleInputPassword">Password</label>
+                        <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword" placeholder="Password">
+                      </div>
+
+                      <div class="form-group col-sm-auto">
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input">
+                          <label class="form-check-label"> Remember me</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                        <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary btn-sm ml-1">Sign In</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- The sign up modal that is shown when click the sing up button -->
+      <div id="signUpModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="content">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-tittle">Sign Up</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                   &times;
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-row">
+                      <div class="form-group col-sm">
+                        <!-- Facebook button -->
+                        <button type="button" class="btn btn-primary btn-sm btn-block">
+                          <span class="fa fa-facebook fa-sm"></span>
+                          Continue with Facebook
+                        </button>
+
+                        <!-- Google button -->
+                        <button type="button" class="btn btn-light btn-sm btn-block">
+                          <span class="fa fa-google fa-sm"></span>
+                          Continue with Google
+                        </button>
+
+                        <!-- A line separator -->
+                        <hr>
+                        <label class="sr-only" for="exampleInputEmail">Email</label>
+                        <input type="email" class="form-control form-control-sm" id="exampleInputEmail" placeholder="Enter Email">
+
+                        <!-- Just adding some space between email input and the button continue -->
+                        <br>
+
+                        <button type="button" class="btn btn-success btn-sm btn-block">Continue</button>
+                      </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+      </div>
+
+
+      <!-- Jumobotron -->
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <div class="row">
+            <!-- For Digital services categorie -->
+            <div class="col col-sm-5">
+              <h3>Digital Services</h3>
+              <div class="row">
+                <div class="col-sm">
+                  <a href="#">Digital Marketing</a>
+                </div>
+
+                <div class="col-sm">
+                  <a href="#">Writing and Translation</a>
+                </div>
+
+                <div class="col-sm">
+                  <a href="#">Video Animation</a>
+                </div>
+
+                <div class="col-sm">
+                  <a href="#">Programming</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- For Direct services categorie -->
+            <div class="col col-sm-5 offset-sm-2">
+              <h3>Direct Services</h3>
+              <div class="row">
+                <div class="col-sm">
+                  <a href="#">Beauty</a>
+                </div>
+
+                <div class="col-sm">
+                  <a href="#">Health</a>
+                </div>
+
+                <div class="col-sm">
+                  <a href="#">Building</a>
+                </div>
+
+                <div class="col-sm">
+                  <a href="#">Bussiness</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <<!-- All the cards -->
+        <h2 class="mt-0">Most popular</h2>
+        <div class="card-deck">
+            <div class="card">
+              <!-- Image of the card -->
+              <img class="card-img-top" src="img/aryan_sharman1.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <!-- Icon stars -->
+                <div class="rating-wrapper">
+                  <span class="gig-rating fa fa-star"></span>
+                  5.0(36)
+                </div>
+                <!-- Heart button and Go somewhere button -->
+                <a class="btn btn-heart"><span class="fa fa-heart"></span></a>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <!-- Image of the card -->
+              <img class="card-img-top" src="img/masump.jfif" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <!-- Icon stars -->
+                <div class="rating-wrapper">
+                  <span class="gig-rating fa fa-star"></span>
+                  5.0(36)
+                </div>
+
+                <!-- Heart button and Go somewhere button -->
+                <a class="btn btn-heart"><span class="fa fa-heart"></span></a>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <!-- Image of the card -->
+              <img class="card-img-top" src="img/mohsin_nabeel.jfif" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <!-- Icon stars -->
+                <div class="rating-wrapper">
+                  <span class="gig-rating fa fa-star"></span>
+                  5.0(36)
+                </div>
+                <!-- Heart button and Go somewhere button -->
+                <a class="btn btn-heart"><span class="fa fa-heart"></span></a>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+        </div>
+
+        <div class="card-deck">
+            <!-- All the cards -->
+            <div class="card">
+              <!-- Image of the card -->
+              <img class="card-img-top" src="img/nareshps.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <!-- Icon stars -->
+                <div class="rating-wrapper">
+                  <span class="gig-rating fa fa-star"></span>
+                  5.0(36)
+                </div>
+                <!-- Heart button and Go somewhere button -->
+                <a class="btn btn-heart"><span class="fa fa-heart"></span></a>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <!-- Image of the card -->
+              <img class="card-img-top" src="img/carolina_niglio.jfif" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <!-- Icon stars -->
+                <div class="rating-wrapper">
+                  <span class="gig-rating fa fa-star"></span>
+                  5.0(36)
+                </div>
+                <!-- Heart button and Go somewhere button -->
+                <a class="btn btn-heart"><span class="fa fa-heart"></span></a>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <!-- Image of the card -->
+              <img class="card-img-top" src="img/artbrahim.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <!-- Icon stars -->
+                <div class="rating-wrapper">
+                  <span class="gig-rating fa fa-star"></span>
+                  5.0(36)
+                </div>
+                <!-- Heart button and Go somewhere button -->
+                <a class="btn btn-heart"><span class="fa fa-heart"></span></a>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+          <!-- Categories -->
+              <div class="row">
+                  <div class="col-4 col-sm-2 offset-1">
+                      <h5>Categories</h5>
+                      <h6>Digital Services</h6>
+                      <ul class="list-unstyled">
+                          <li><a href="#">Digital Marketing</a></li>
+                          <li><a href="#">Writing and Translation</a></li>
+                          <li><a href="#">Video Animation</a></li>
+                          <li><a href="#">Programming</a></li>
+                      </ul>
+
+                      <h6>Direct Services</h6>
+                      <ul class="list-unstyled">
+                          <li><a href="#">Beuty</a></li>
+                          <li><a href="#">Health</a></li>
+                          <li><a href="#">Building</a></li>
+                          <li><a href="#">Bussiness</a></li>
+                      </ul>
+                  </div>
+
+                  <!-- More section -->
+                  <div class="col-7 offset-1 col-sm-5">
+                      <h5>More</h5>
+                      <ul class="list-unstyled">
+                          <li><a href="#">Terms</a></li>
+                          <li><a href="#">Privacy</a></li>
+                          <li><a href="#">Help</a></li>
+                          <li><a href="#">Accessibility</a></li>
+                      </ul>
+                  </div>
+
+                  <!-- Social buttons -->
+                  <div class="col-12 col-sm-4 align-self-center">
+                      <div class="text-center">
+                          <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                          <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                          <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                          <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                          <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                      </div>
+                  </div>
+             </div>
+             <hr>
+             <div class="row justify-content-center">
+                  <div class="col-auto">
+                      <p>© Copyright 2020 CNServices</p>
+                  </div>
+             </div>
+             <hr>
+          </div>
+      </footer>
+
+
+      <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+      <script src="js/main.js"></script>
+  </body>
+
+
+</html>
